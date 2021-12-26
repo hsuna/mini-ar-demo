@@ -1,0 +1,7 @@
+<view class="list-container">
+    <button type="primary" size="default" plain="true" bindtap="tap" data-id="photo">拍照</button>
+    <button type="primary" size="default" plain="true" bindtap="tap" data-id="3dphoto">3D拍照</button>
+    <button type="primary" size="default" plain="true" bindtap="tap" data-id="arphoto">ar拍照</button>
+    <button type="primary" size="default" plain="true" bindtap="tap" data-id="aihiro">hiro识别</button>
+    <button type="primary" size="default" plain="true" bindtap="tap" data-id="gyroscope">设备数据</button>
+</view>

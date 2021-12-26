@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <camera frame-size="medium"></camera>
+  <canvas id="canvas" type="webgl"></canvas>
+</view>

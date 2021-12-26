@@ -1,0 +1,18 @@
+<canvas style="width: 100%; height: 100%; position:fixed;top:-999px;left: -999px;" canvas-id="firstCanvas"></canvas>
+
+<camera
+wx:if="{{!saveImage}}"
+  device-position="back"
+  flash="off"
+  binderror="error"
+  style="position: absolute; width: 100%; height: 100%; z-index:2;"
+  frame-size="small"
+></camera>
+
+<cover-image wx:if="{{!saveImage}}" src="https://radar-static.amwaynet.com.cn/apps/super-radar/admin/v1/image/90613752304616814434966952012.png" style="position: absolute; width: 100%; height: 100%; z-index:3;"></cover-image>
+<cover-image wx:if="{{!saveImage}}" bind:tap="handleTap" src="../../assets/2.png" style="position: absolute; left: 0; right: 0; margin: 0 auto; bottom: 12%; width: 60px; height: 60px; z-index:4; border-radius: 60px; border: 2px solid #fff; background: #fff;"></cover-image>
+
+<cover-view wx:if="{{saveImage}}" style="position: fixed; z-index:4; left: 0; width: 100%; height: 100%; top: 0;">
+  <cover-image src="{{saveImage}}" style="position: absolute; z-index:4; left: 10%; right: 10%; top: 5%; bottom:15%; width: 80%; height: 80%; "></cover-image>
+  <button type="primary" plain="true" style="position: absolute; left: 0; right: 0; bottom:4%; width: 60%; margin: 0 auto;" bind:tap="handleSave">保存相册</button>
+</cover-view>

@@ -1,0 +1,27 @@
+<view class="container">
+  <camera 
+    id="camera"
+    flash="off" 
+    frame-size="large">
+  </camera>
+    <canvas  id="webgl" canvas-id="webgl" class="webgl" type="webgl" disable-scroll="{{true}}"  bindtouchstart="onTX" bindtouchmove="onTX" bindtouchend="onTX"></canvas>
+  <canvas class="helper-canvas" type="2d" id="canvas"></canvas>
+
+  <image src="https://radar-static.amwaynet.com.cn/apps/super-radar/admin/v1/image/90613752304616814434966952012.png" class="huakuang"></image>
+  <view class='btn' bindtap="takePhoto">拍照</view>
+
+  <view class="pop-share" wx:if='{{containerType === "photo"}}' bindtap="back">
+    <canvas canvas-id="photo" style="width: {{photoSize.width}}rpx;height:{{photoSize.height}}rpx;left:-10000px;"></canvas>
+    <image class="photo" src='{{photoUrl}}'></image>
+    <view class="share1">
+        <button open-type="share">
+            <view>分享微信好友</view>
+        </button>
+        <button catchtap="savePhoto">
+            <view>分享微信朋友圈</view>
+        </button>
+    </view>
+  </view>
+</view>
+
+

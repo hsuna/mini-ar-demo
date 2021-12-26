@@ -1,0 +1,20 @@
+<view class="list-container">
+    <view class="title">Compass</view>
+    <view class="text">Direction: {{compass.direction}}</view>
+    <view class="text">Accuracy: {{compass.accuracy}}</view>
+
+    <view class="title">DeviceMotion</view>
+    <view class="text">Alpha: {{deviceMotion.alpha}}</view>
+    <view class="text">Beta: {{deviceMotion.beta}}</view>
+    <view class="text">Gamma: {{deviceMotion.gamma}}</view>
+
+    <view class="title">Gyroscope</view>
+    <view class="text">X: {{gyroscope.x}}</view>
+    <view class="text">Y: {{gyroscope.y}}</view>
+    <view class="text">Z: {{gyroscope.z}}</view>
+    
+    <view class="title">Accelerometer</view>
+    <view class="text">X: {{accelerometer.x}}</view>
+    <view class="text">Y: {{accelerometer.y}}</view>
+    <view class="text">Z: {{accelerometer.z}}</view>
+</view>

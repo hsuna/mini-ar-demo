@@ -1,0 +1,128 @@
+/* ar/pages/baikeCamera/baikeCamera.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+camera{
+  width: 100%;
+  height: 100%;
+}
+.huakuang {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.webgl{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.btn{
+  position: fixed;
+  bottom: 100rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
+  border: 2rpx solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.helper-canvas {
+  position: fixed;
+  left: -100000px;
+}
+
+.pop-share{
+  position: fixed;
+  top: 0rpx;
+  /* left: 0rpx; */
+  width:100%;
+  z-index: 100;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,1);
+}
+.pop-share .photo {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  z-index: 100;
+  width: 60%;
+  height: 60%
+}
+.pop-share .share1{
+  position: absolute;
+  bottom: 0;
+  /* left:50%;
+  transform: translateX(-50%);
+  width: 95%; */
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  /* border-radius: 20rpx; */
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  height: 300rpx;
+  display: flex;
+  justify-content: space-around;
+  z-index: 200;
+}
+.pop-share .share1 button{
+  background-color: transparent;
+  padding-top: 30rpx;
+  
+}
+.pop-share .share1 button::after{
+  border:none;
+}
+.pop-share .share1 image{
+  width: 80rpx;
+  height: 80rpx;
+  position: relative;
+  top: 40rpx;
+}
+.pop-share .share2{
+  position: absolute;
+  top:50rpx;
+  left:50%;
+  transform: translateX(-50%);
+}
+.pop-share .share2 .share-canvas{
+  width: 300px;
+  height: 450px;
+}
+
+.pop-share .share2 .btn-box{
+  position: absolute;
+  bottom: -270rpx;
+  left: 0rpx;
+  width: 100%;
+}
+.pop-share .share2 .button{
+  width: 80%;
+  margin:20rpx 10%;
+  height: 100rpx;
+  border-radius: 50rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  text-align: center;
+}
+.pop-share .share2 .button:first-child{
+  color: #0083ff;
+  font-weight: bolder;
+  font-size: 36rpx;
+}
